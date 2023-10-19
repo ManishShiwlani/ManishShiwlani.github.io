@@ -1,5 +1,4 @@
 #root {
-  margin-left: 4rem;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -103,4 +102,38 @@ th {
 
 .educationHead{
   color:#646cffaa
+}
+
+
+/* ... existing styles ... */
+
+@media (max-width: 768px) {
+  #root {
+    margin-left: 1rem; /* smaller side margins */
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1em; /* smaller padding */
+  }
+
+  h2 {
+    font-size: 1.5em; /* adjust font size */
+  }
+
+  /* Make tables scroll horizontally on small screens */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 12px 8px; /* adjust padding */
+  }
+
+  /* Adjust component-specific margins */
+  .education, .skills, .awards, .activities {
+    margin-bottom: 20px;
+  }
 }
